@@ -5,7 +5,7 @@ export const FriendList = ({ friends }) => {
   return (
     <ul className="friendList">
       {friends.map(friend => {
-        console.log(friend);
+        // console.log(friend);
         return (
           <li className="item" key={friend.id}>
             <FriendsListItem item={friend} />
