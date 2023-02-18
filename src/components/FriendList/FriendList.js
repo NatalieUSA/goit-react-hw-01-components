@@ -1,18 +1,31 @@
 import { FriendsListItem } from './FriendListItem';
 
+import { List, Item } from './FriendList.styled';
+
 export const FriendList = ({ friends }) => {
-  //   console.log(friends.id);
   return (
-    <ul className="friendList">
+    <List>
       {friends.map(friend => {
-        // console.log(friend);
         return (
-          <li className="item" key={friend.id}>
+          <Item key={friend.id}>
             <FriendsListItem item={friend} />
-          </li>
+          </Item>
         );
       })}
-      FriendList
-    </ul>
+    </List>
   );
 };
+
+// export const FriendList = ({ friends }) => {
+//   return (
+//     <ul className="friendList">
+//       {friends.map(friend => {
+//         return (
+//           <li className="item" key={friend.id}>
+//             <FriendsListItem item={friend} />
+//           </li>
+//         );
+//       })}
+//     </ul>
+//   );
+// };

@@ -1,12 +1,13 @@
 import { StatList } from './StatList';
 
+import { Container, Title } from './Statistics.styled';
+
 export const Statistics = ({ title, stats }) => {
-  console.log(stats);
   return (
-    <section>
-      <h2>{title}</h2>
+    <Container>
+      <Title>{title}</Title>
 
       <StatList stats={stats} />
-    </section>
+    </Container>
   );
 };

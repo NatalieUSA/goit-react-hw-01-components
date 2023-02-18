@@ -1,26 +1,56 @@
+import PropTypes from 'prop-types';
+
+import { Table, Header, Title, TitleItem } from './TransactionHistory.styled';
+
 export const TransactionHistory = ({ items }) => {
-  console.log(items);
+  //   console.log(items);
   return (
-    <table className="transactionHistory">
-      <thead>
-        <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
-        </tr>
-      </thead>
+    <Table>
+      <Header>
+        <Title>
+          <TitleItem>Type</TitleItem>
+          <TitleItem>Amount</TitleItem>
+          <TitleItem>Currency</TitleItem>
+        </Title>
+      </Header>
       {items.map(item => {
-        console.log(item.currency);
         return (
           <tbody>
-            <tr>
+            <Title key={item.id}>
               <td>{item.type}</td>
               <td>{item.amount}</td>
               <td>{item.currency}</td>
-            </tr>
+            </Title>
           </tbody>
         );
       })}
-    </table>
+    </Table>
   );
 };
+
+// export const TransactionHistory = ({ items }) => {
+//   //   console.log(items);
+//   return (
+//     <Table>
+//       <thead>
+//         <tr>
+//           <th>Type</th>
+//           <th>Amount</th>
+//           <th>Currency</th>
+//         </tr>
+//       </thead>
+//       {items.map(item => {
+//         // console.log(item.currency);
+//         return (
+//           <tbody>
+//             <tr>
+//               <td>{item.type}</td>
+//               <td>{item.amount}</td>
+//               <td>{item.currency}</td>
+//             </tr>
+//           </tbody>
+//         );
+//       })}
+//     </Table>
+//   );
+// };

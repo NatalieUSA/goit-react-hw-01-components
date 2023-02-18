@@ -1,15 +1,17 @@
+import { List, Label, Percentage, ListItem } from './StatList.styled';
+
 export const StatList = ({ stats }) => {
-  console.log(stats.label);
+  // console.log(stats.label);
   return (
-    <ul>
+    <List>
       {stats.map(stat => {
         return (
-          <li className="item" key={stat.id}>
-            <span className="label"> {stat.label}</span>
-            <span className="percentage"> {stat.percentage}%</span>
-          </li>
+          <ListItem key={stat.id}>
+            <Label> {stat.label}</Label>
+            <Percentage> {stat.percentage}%</Percentage>
+          </ListItem>
         );
       })}
-    </ul>
+    </List>
   );
 };
