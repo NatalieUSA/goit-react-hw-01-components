@@ -8,7 +8,10 @@ export const StatList = ({ stats }) => {
     <List>
       {stats.map(stat => {
         return (
-          <ListItem key={stat.id}>
+          <ListItem
+            key={stat.id}
+            style={{ backgroundColor: getRandomHexColor() }}
+          >
             <Label> {stat.label}</Label>
             <Percentage> {stat.percentage}%</Percentage>
           </ListItem>
@@ -17,6 +20,10 @@ export const StatList = ({ stats }) => {
     </List>
   );
 };
+
+function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+}
 
 StatList.protoType = {
   stats: PropTypes.arrayOf(

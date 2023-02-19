@@ -13,17 +13,15 @@ export const TransactionHistory = ({ items }) => {
           <TitleItem>Currency</TitleItem>
         </Title>
       </Header>
-      {items.map(item => {
-        return (
-          <tbody>
-            <Title key={item.id}>
-              <td>{item.type}</td>
-              <td>{item.amount}</td>
-              <td>{item.currency}</td>
-            </Title>
-          </tbody>
-        );
-      })}
+      <tbody>
+        {items.map(({ id, type, amount, currency }) => (
+          <Title key={id}>
+            <td>{type}</td>
+            <td>{amount}</td>
+            <td>{currency}</td>
+          </Title>
+        ))}
+      </tbody>
     </Table>
   );
 };

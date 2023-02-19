@@ -1,14 +1,13 @@
 import styled from 'styled-components';
 
 export const ProfileStyle = styled.div`
-  max-width: 40%;
-  margin-top: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 25%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 0.5rem;
-  margin: 0 auto;
+  margin: 150px auto;
 `;
 
 export const Description = styled.div`
@@ -27,19 +26,18 @@ export const Image = styled.img`
 `;
 
 export const Name = styled.p`
-  margin-bottom: 0.5rem;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: grey;
 `;
 
 export const Tag = styled.p`
   margin: 0.5rem;
-  font-size: 1rem;
-  color: lightgrey;
+  font-size: 1.2rem;
+  color: grey;
 `;
 export const Location = styled.p`
   margin: 0.5rem;
   font-size: 1rem;
-  color: lightgrey;
+  color: grey;
 `;

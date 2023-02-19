@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const LikesList = styled.ul`
   display: flex;
-  border-radius: 0 0 0.5rem;
+  // border-radius: 0 0 1rem;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -15,19 +15,21 @@ export const LikesList = styled.ul`
 export const ViewsList = styled.li`
   list-style: none;
   display: flex;
+  flex-direction: column;
   text-align: center;
   border-left: 1px solid #d3d5e3;
   border-right: 1px solid #d3d5e3;
   width: 100%;
-  flex-direction: column;
   padding: 1rem 0;
   background-color: rgba(241, 241, 241, 0.833);
+  // // border-radius: 0.5rem;
+  // border-radius: 0 0 0.5rem;
 `;
 
 export const Quantity = styled.span`
   font-weight: bold;
   font-size: 1.2rem;
-  border-radius: 0.5rem;
+  // border-radius: 0.5rem;
   color: grey;
 `;
 

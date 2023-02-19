@@ -11,12 +11,14 @@ export const Container = styled.section`
   border-radius: 0.5rem;
 `;
 export const Title = styled.h2`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
   margin: 0;
   padding: 2rem;
-  text-transform: uppercase;
-  text-align: center;
-  color: #000;
-  font-weight: bold;
+  color: grey;
   font-size: 1.5rem;
+  font-weight: bold;
   border-bottom: 1px solid #d3d5e3;
 `;

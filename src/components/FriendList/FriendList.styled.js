@@ -2,14 +2,13 @@ import styled from 'styled-components';
 
 export const List = styled.ul`
   margin: 0 auto;
-  padding: 0 0 150px 0;
+  padding: 150px 0;
   list-style: none;
 
-  max-width: 62%;
+  max-width: 50%;
   margin-top: 5vh;
-  //   display: flex;
   flex-direction: column;
-  //   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 0.5rem;
 `;
 
