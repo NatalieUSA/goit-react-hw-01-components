@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-
+import { getRandomHexColor } from '../utiles';
 import { List, Label, Percentage, ListItem } from './StatList.styled';
 
 export const StatList = ({ stats }) => {
@@ -20,10 +20,6 @@ export const StatList = ({ stats }) => {
     </List>
   );
 };
-
-function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-}
 
 StatList.protoType = {
   stats: PropTypes.arrayOf(

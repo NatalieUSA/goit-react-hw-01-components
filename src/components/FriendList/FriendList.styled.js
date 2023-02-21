@@ -10,6 +10,9 @@ export const List = styled.ul`
   flex-direction: column;
   // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 0.5rem;
+  @media (max-width: 768px) {
+    max-width: 70%;
+  }
 `;
 
 export const Item = styled.li`

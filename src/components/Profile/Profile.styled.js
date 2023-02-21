@@ -4,10 +4,13 @@ export const ProfileStyle = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 25%;
+  max-width: 50%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 0.5rem;
   margin: 150px auto;
+  @media (max-width: 768px) {
+    max-width: 80%;
+  }
 `;
 
 export const Description = styled.div`

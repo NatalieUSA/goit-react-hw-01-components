@@ -9,6 +9,10 @@ export const Table = styled.table`
   width: 60%;
   text-align: center;
   border-collapse: collapse;
+
+  @media (max-width: 768px) {
+    width: 90%;
+  }
 `;
 
 export const Header = styled.thead`
@@ -17,7 +21,7 @@ export const Header = styled.thead`
   // height: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  background-color: #00bcd4;
+  background-color: grey;
   color: white;
   border-radius: 2rem;
 `;
@@ -31,8 +35,17 @@ export const Title = styled.tr`
 
   border-radius: 2rem;
 
+  @media (max-width: 768px) {
+    font-size: 0.7rem;
+  }
+
   :nth-child(even) {
     background-color: #f2f2f2;
+  }
+  :last-child {
+    // border-radius: 0 0 0 2rem;
+    border-radius: 2rem;
+    // background-color: red;
   }
 `;
 
@@ -40,8 +53,12 @@ export const TitleItem = styled.th`
   width: 200px;
   padding: 0.5rem 2rem;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
+  @media (max-width: 768px) {
+    font-size: 0.7rem;
+    padding: 0.5rem 0.5rem;
+  }
 
   :not(:last-child) {
     border-right: 1px solid #ffffff;

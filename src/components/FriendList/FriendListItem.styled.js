@@ -23,4 +23,7 @@ export const Name = styled.p`
   text-align: left;
   font-size: 2rem;
   color: grey;
+  @media (max-width: 768px) {
+    font-size: 1.4rem;
+  }
 `;
